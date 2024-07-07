@@ -1,0 +1,11 @@
+# 忽略目录
+node_modules
+dist/
+
+# 忽略指定文件 
+.eslintignore
+.prettierignore        
+.eslintrc.js
+.prettierrc.js 
+babel.config.json
+.npmrc

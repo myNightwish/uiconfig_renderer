@@ -36,7 +36,7 @@
     "file-loader": "^6.2.0",
     "file-save": "^0.2.0",
     "html-webpack-plugin": "^5.6.0",
-    "mi-element-ui": "^1.0.4",
+    "mi-element-ui": "1.0.5-rc.2",
     "mini-css-extract-plugin": "2.3.0",
     "postcss": "^8.4.38",
     "postcss-loader": "^8.1.1",

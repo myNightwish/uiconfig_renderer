@@ -1,28 +1,33 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import compSwitch from './compSwitch.json';
+import {userCard, showList} from './cardConf/index.js';
+import HomPage from './play/home/index.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
-        name: 'component',
-        component: resolve => require(['./play/home/index.vue'], resolve)
-    },
-    {
-        path: '/think',
-        name: 'think',
-        component: resolve => require(['./play/think/index.vue'], resolve)
-    },
-    {
-        path: '/read',
-        name: 'read',
-        component: resolve => require(['./play/read/index.vue'], resolve)
+        component: HomPage,
+        props: {
+            baseConf: {
+                userCard,
+                showList
+            },
+            compSwitch,
+            foramteListFunc: productItem => ({
+                ...productItem,
+                originalPrice: '￥' + productItem.originalPrice,
+                price: '￥' + productItem.price
+            })
+        }
     }
 ];
 
+
 export default new VueRouter({
-    mode: 'hash',
+    mode: 'history',
     base: __dirname,
     routes
 });

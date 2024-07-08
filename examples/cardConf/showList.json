@@ -1,0 +1,60 @@
+{
+  "container": "container",
+  "list": "list",
+  "itemConfig": {
+      "normal": {
+          "name": "item",
+          "innerClass": "normal",
+          "children": [
+              {
+                  "name": "description",
+                  "config": {
+                      "innerClass": "description",
+                      "tag": "div"
+                  }
+              },
+              {
+                  "name": "originalPrice",
+                  "config": {
+                      "innerClass": "original-price",
+                      "tag": "div"
+                  }
+              },
+              {
+                  "name": "price",
+                  "config": {
+                      "innerClass": "price",
+                      "tag": "div"
+                  }
+              }
+          ]
+      },
+      "active": {
+          "name": "item",
+          "innerClass": "normal active",
+          "children": [
+              {
+                  "name": "description",
+                  "config": {
+                      "innerClass": "description",
+                      "tag": "div"
+                  }
+              },
+              {
+                  "name": "originalPrice",
+                  "config": {
+                      "innerClass": "original-price",
+                      "tag": "div"
+                  }
+              },
+              {
+                  "name": "price",
+                  "config": {
+                      "innerClass": "price",
+                      "tag": "div"
+                  }
+              }
+          ]
+      }
+  }
+}

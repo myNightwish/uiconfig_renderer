@@ -16,6 +16,9 @@ exports.externals = externals;
 
 exports.alias = {
   Examples: path.resolve(__dirname, '../examples'),
+  Common: path.resolve(__dirname, '../examples/common'),
+  BaseStyle: path.resolve(__dirname, '../examples/baseStyle'),
+  Components: path.resolve(__dirname, '../examples/components'),
 };
 // 定义 Vue 的模块系统配置，以便在不同模块系统中都可以正确引用 Vue
 exports.vue = {

@@ -8,9 +8,7 @@ const config = require('./config');
 
 module.exports = {
     mode: 'production',
-    entry: {
-        app: ['./src/index.js'] // Entry descriptor  传入一个对象 ./src/index.js
-    },
+    entry: './src/index.js',
     output: {
         // 组件库打包产物输出的绝对路径
         path: path.resolve(process.cwd(), 'lib/'), // 绝对路径

@@ -13,7 +13,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const webpackConfig = {
   // 动态mode，根据环境变量 NODE_ENV 决定是开发模式还是生产模式
   mode: process.env.NODE_ENV,
-  entry: './examples/play.js',
+  entry: './examples/entry.js',
   output: {
     path: path.resolve(process.cwd(), 'dist/'),
     // 指定发布到线上资源的 URL 前缀，在浏览器加载资源时会用到。常用于设置 CDN 地址或服务器路径。

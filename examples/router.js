@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import compSwitch from './compSwitch.json';
 import {userCard, showList} from './cardConf/index.js';
-import HomPage from './play/home/index.vue';
+import HomPage from './pages/home/index.vue';
 
 Vue.use(VueRouter);
 
@@ -18,8 +18,6 @@ const routes = [
             compSwitch,
             foramteListFunc: productItem => ({
                 ...productItem,
-                originalPrice: '￥' + productItem.originalPrice,
-                price: '￥' + productItem.price
             })
         }
     }

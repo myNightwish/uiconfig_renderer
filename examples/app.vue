@@ -1,18 +1,15 @@
 <template>
-    <div id="palyapp">
-        <div id="nav"></div>
-      <router-view />
-    </div>
+    <router-view />
 </template>
 
 <script>
 export default {
-  name: 'Play'
+  name: 'App'
 };
 </script>
 
 <style>
-#palyapp {
+#app {
   color: #2c3e50;
   height: 100vh;
   overflow: auto;

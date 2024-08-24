@@ -174,7 +174,8 @@ const webpackConfig = {
     // static: {
     //     directory: path.join(__dirname, 'dist')
     // },
-    host: 'nightwish.com'
+    host: 'nn.pan.baidu.com',
+    port: 8091
   },
 };
 //  将 CSS 提取到单独文件中，而不是将其嵌入到 JS 文件中。

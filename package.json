@@ -1,10 +1,11 @@
 {
   "name": "uiconfig-renderer",
   "description": "UI配置化渲染",
-  "main": "./lib/mi-config-renderer.js",
+  "main": "./dist/mi-config-renderer.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --config build/webpack.demo.js",
     "dist": "webpack --config build/webpack.common.js && cross-env NODE_ENV=production webpack --config build/webpack.demo.js",
+    "release": "cross-env MODE=release webpack --config build/webpack.common.js",
     "lint": "eslint examples",
     "lint:fix": "eslint --fix examples",
     "format": "cross-env NODE_ENV=development prettier --write .",
@@ -16,7 +17,9 @@
   "dependencies": {
     "@babel/runtime": "^7.24.7",
     "element-ui": "^2.15.14",
-    "vue": "^2.7.16"
+    "ora": "^5.4.1",
+    "vue": "^2.7.16",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
@@ -52,6 +55,7 @@
     "vue-router": "^3.6.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
+    "webpack-deploy-plugin": "^1.0.3",
     "webpack-dev-server": "^5.0.4",
     "webpack-node-externals": "^3.0.0"
   }
